@@ -1,30 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CampusMart | Home</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CampusMart — Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <h1 class="logo">CampusMart</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="login.html">Login</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">CampusMart</div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Login</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Welcome to CampusMart</h2>
-    <p>Your one-stop shop for all college essentials!</p>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 style="color:darkblue;">Your Campus. Your Market.</h1>
+          <p style="color: black;">Hand-picked essentials for students — gadgets, stationery, hostel gear and more. Quality you can trust, prices students can afford.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="products.html">Shop Now</a>
+            <a class="btn btn-outline" href="about.html">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1543269664-76bc3997d9ea?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b2f1b18b1f8b0a3df5e5d8b3f28f8ee" alt="students shopping">
+        </div>
+      </div>
+    </section>
 
-  <section class="products" id="products">
-    <!-- Products will load from JS -->
-  </section>
+    <section class="featured container">
+      <h2>Featured picks</h2>
+      <div class="card-grid" id="featured-grid">
+        <!-- JS will render cards here -->
+      </div>
+    </section>
+
+    <section class="reviews container">
+      <h2>Student reviews</h2>
+      <div class="review-grid">
+        <div class="review">
+          <img src="https://i.imgur.com/4AiXzf8.jpeg" alt="Priya">
+          <div>
+            <strong>Priya S.</strong>
+            <p>"Quality products and fast delivery to my hostel. Highly recommended."</p>
+          </div>
+        </div>
+        <div class="review">
+          <img src="https://i.imgur.com/ebHfuth.jpeg" alt="Rahul">
+          <div>
+            <strong>Rahul M.</strong>
+            <p>"Great student discounts and the laptop I bought runs my projects smoothly."</p>
+          </div>
+        </div>
+        <div class="review">
+          <img src="https://i.imgur.com/q6BvG7E.jpeg" alt="Swetha">
+          <div>
+            <strong>Swetha R.</strong>
+            <p>"Found everything for my hostel room. Customer care was helpful."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 CampusMart — Made for students, by students.</p>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>

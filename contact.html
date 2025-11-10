@@ -1,32 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | CampusMart</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CampusMart — Contact</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <h1 class="logo">CampusMart</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="login.html">Login</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">CampusMart</div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="login.html" class="nav-link">Login</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="contact">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" id="cname" placeholder="Your Name" required>
-      <input type="email" id="cemail" placeholder="Your Email" required>
-      <textarea id="cmessage" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-      <p id="contactMsg"></p>
+  <main class="container contact-page">
+    <h1>Contact us</h1>
+    <p>If you have questions, suggestions, or need help, fill the form below.</p>
+
+    <form id="contactForm" class="contact-form">
+      <label for="name">Name</label>
+      <input id="name" type="text" required />
+
+      <label for="email">Email</label>
+      <input id="emailContact" type="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button class="btn btn-primary" type="submit">Send Message</button>
+      <p id="contactFeedback" class="small muted"></p>
     </form>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 CampusMart</p>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
