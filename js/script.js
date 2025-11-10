@@ -30,14 +30,14 @@ const PRODUCTS = [
   },
   {
     id: "p5",
-    name: "Backpack with Laptop Compartment",
+    name: "Nike Shoe",
     price: 1999,
     category: "hostel",
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=be6c3a7a2f4b8c5d9a6b7c8d3e4f5a6b"
   },
   {
     id: "p6",
-    name: "Portable Charger 20,000mAh",
+    name: "Premium Coffee Cup",
     price: 1299,
     category: "gadgets",
     image: "https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7d8a9c0b1e2f3a4b5c6d7e8f9a0b1c2d"
